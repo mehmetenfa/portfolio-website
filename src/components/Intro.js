@@ -37,14 +37,9 @@ class Intro extends React.Component {
         <FadeInSection>
           <div className="intro-subtitle">I create stuff sometimes.</div>
           <div className="intro-desc">
-            I'm a software engineer and artist based in Toronto. I have great
-            interest in full-stack development, artificial intelligence,
-            human-computer interactions, and everything in between.
+            I am 18 years old and I am a Software Engineer in Turkey.
           </div>
-          <a
-            href="mailto:gazi.jarin@mail.utoronto.ca"
-            className="intro-contact"
-          >
+          <a href="mehmet.enfa@gmail.com" className="intro-contact">
             <EmailRoundedIcon></EmailRoundedIcon>
             {"  " + "Say hi!"}
           </a>
