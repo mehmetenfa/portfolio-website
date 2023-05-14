@@ -4,6 +4,7 @@ import './styles/Global.css'
 import 'rsuite/dist/styles/rsuite-default.css'
 import Intro from './components/Intro';
 import About from './components/About';
+import Experience from './components/Experience'
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <div id='content'>
         <Intro></Intro>
         <About></About>
+        <Experience></Experience>
       </div>
     </div>
   );
