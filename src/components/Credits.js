@@ -1,11 +1,33 @@
-import React, { Component } from 'react'
+import React from "react";
+import "../styles/Credits.css";
+import FadeInSection from "./FadeInSection";
 
-export class Credits extends Component {
+class Credits extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      expanded: true,
+      activeKey: "1"
+    };
+    this.handleSelect = this.handleSelect.bind(this);
+  }
+  handleSelect(eventKey) {
+    this.setState({
+      activeKey: eventKey
+    });
+  }
   render() {
     return (
-      <div>Credits</div>
-    )
+      <FadeInSection>
+        <div id="credits">
+          <div className="ending-credits">
+            <div>Built and designed by Mehmet Enfa. </div>
+            <div>All rights reserved. ©</div>
+          </div>
+        </div>
+      </FadeInSection>
+    );
   }
 }
 
-export default Credits
+export default Credits;
